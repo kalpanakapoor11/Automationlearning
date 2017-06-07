@@ -24,6 +24,7 @@ public class FindingElements {
 		
 		//WebElement nextbtn=driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span"));
 		//nextbtn.click();
+		
 		driver.findElement(By.xpath("//*[@id=\"identifierNext\"]/content/span")).click();
 		driver.findElement(By.name("password")).sendKeys("gjjkhgkjj");
 		driver.findElement(By.xpath("//*[@id=\"passwordNext\"]/content/span")).click();
