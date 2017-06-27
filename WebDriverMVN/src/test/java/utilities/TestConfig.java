@@ -1,4 +1,4 @@
-package rough;
+package utilities;
 public class TestConfig{
 
 
@@ -25,8 +25,8 @@ public class TestConfig{
 	//MYSQL DATABASE DETAILS
 	public static String mysqldriver="com.mysql.jdbc.Driver";
 	public static String mysqluserName = "root";
-	public static String mysqlpassword = "selenium";
-	public static String mysqlurl = "jdbc:mysql://localhost:3306/9thapril";
+	public static String mysqlpassword = "besi2614";
+	public static String mysqlurl = "jdbc:mysql://localhost:3306/db";
 	
 	
 	

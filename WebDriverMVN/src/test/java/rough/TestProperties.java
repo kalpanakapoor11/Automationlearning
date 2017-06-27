@@ -21,6 +21,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import utilities.MonitoringMail;
+import utilities.TestConfig;
+
 public class TestProperties {
 	
 	public static WebDriver driver;
@@ -77,7 +80,7 @@ public class TestProperties {
 		}catch(Throwable t) {
 			
 			captureScreenShot();
-			log.deebug()
+			log.debug(t.getMessage());
 			mail.sendMail(TestConfig.server,TestConfig.from , TestConfig.to, TestConfig.subject, t.getMessage(), TestConfig.attachmentPath, TestConfig.attachmentName);
 
 			

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Learning TestNG]">
+  <listeners>
+    <listener class-name="listeners.CustomListeners"/>
+  </listeners>
+  <test name="Validate Title Test(failed)">
+    <classes>
+      <class name="testngLearning.TestCase2">
+        <methods>
+          <include name="validateTitle"/>
+        </methods>
+      </class> <!-- testngLearning.TestCase2 -->
+    </classes>
+  </test> <!-- Validate Title Test(failed) -->
+  <test name="Dependency Test(failed)">
+    <groups>
+      <run>
+        <include name="high"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testngLearning.TestCase3">
+        <methods>
+          <include name="doLogin"/>
+          <include name="doUserReg"/>
+        </methods>
+      </class> <!-- testngLearning.TestCase3 -->
+    </classes>
+  </test> <!-- Dependency Test(failed) -->
+</suite> <!-- Failed suite [Learning TestNG] -->
